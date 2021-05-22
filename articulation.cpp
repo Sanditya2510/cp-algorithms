@@ -12,7 +12,7 @@ int n; // number of nodes
 vector<vector<int>> adj; // adjacency list of graph
 
 vector<bool> visited;
-vector<int> tin, low;//low[i] is basically the minimum time to reach ith node
+vector<int> tin, low;//low[i] is the min time which I can reach from my subgraph.
 int timer;
 
 void dfs(int v, int p = -1) {
